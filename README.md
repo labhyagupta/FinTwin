@@ -1,4 +1,4 @@
-# Financial Nexus — Microfinance Group Risk Monitoring & ML Stress Diffusion
+# FinTwin — Microfinance Group Risk Monitoring & ML Stress Diffusion
 
 A modern, accessible web application for microfinance lending circles (such as the Mwangaza Circle) that models financial distress and mutual-guarantee transmission across connected borrowers through an organic spiderweb graph visualization.
 
