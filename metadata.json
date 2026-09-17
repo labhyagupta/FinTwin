@@ -1,0 +1,6 @@
+{
+  "name": "Financial Nexus",
+  "description": "Microfinance group risk-monitoring tool visualizing stress diffusion through a living radial spiderweb network with pastel yellow and sage green styling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

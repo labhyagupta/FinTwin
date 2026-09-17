@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Light Mode - Calm Pastel Palette (Default) */
+    --bg-page: #FBFBEE; /* Very soft cream / light beige */
+    --bg-card: #FFFFFF;
+    --bg-card-subtle: #F4F7EE; /* Soft warm light pastel sage */
+    --bg-header: rgba(251, 251, 238, 0.92);
+    --border-main: #E3E9DA;
+    --border-subtle: #EDF1E7;
+    --border-highlight: #FDE047;
+    --text-primary: #1F2D20; /* Deep soft forest green text for high legibility */
+    --text-secondary: #586B5A; /* Muted earthy sage */
+    --text-muted: #7E9280;
+    --accent-yellow: #FEF08A; /* Light pastel yellow */
+    --accent-yellow-border: #FACC15;
+    --accent-green: #D9EBD4; /* Light pastel green */
+    --accent-green-border: #86B581;
+    --accent-green-text: #2D5A2B;
+    --color-caution: #D97706; /* Softer warm amber */
+    --color-stress: #DC2626; /* Readable soft red */
+    --color-calm: #16A34A; /* Reassuring green */
+    --web-spoke: rgba(134, 181, 129, 0.28);
+    --web-ring: rgba(134, 181, 129, 0.35);
+    --web-bg-canvas: #F8FAF2;
+  }
+
+  .dark {
+    /* Dark Mode - Soft Muted Forest */
+    --bg-page: #141E16;
+    --bg-card: #1D2A1F;
+    --bg-card-subtle: #243527;
+    --bg-header: rgba(20, 30, 22, 0.94);
+    --border-main: #2F4433;
+    --border-subtle: #253829;
+    --border-highlight: #FEF08A;
+    --text-primary: #EEF4EB;
+    --text-secondary: #B2C4B0;
+    --text-muted: #80967E;
+    --accent-yellow: #FEF08A;
+    --accent-yellow-border: #FDE047;
+    --accent-green: #2B3D2E;
+    --accent-green-border: #527A56;
+    --accent-green-text: #A7D1A2;
+    --color-caution: #FBBF24;
+    --color-stress: #F87171;
+    --color-calm: #4ADE80;
+    --web-spoke: rgba(90, 125, 95, 0.35);
+    --web-ring: rgba(90, 125, 95, 0.45);
+    --web-bg-canvas: #162218;
+  }
+
+  body {
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  h1, h2, h3, .font-serif-display {
+    font-family: 'Fraunces', Georgia, serif;
+    font-feature-settings: "cv01" on, "cv02" on;
+  }
+}
+
+/* Subtle, clean scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #C7D4C4;
+  border-radius: 9999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #2E4232;
+}
+
+@keyframes webPluck {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(-1.5px, 2px); }
+  50% { transform: translate(2px, -1.5px); }
+  75% { transform: translate(-1px, 1px); }
+  100% { transform: translate(0, 0); }
+}
